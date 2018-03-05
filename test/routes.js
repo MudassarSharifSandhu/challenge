@@ -83,7 +83,6 @@ tape('should get stream', function (t) {
       t.end()
     })
 })
-
 tape('should get echo', function (t) {
   var url = '/echo?one=1&two=2'
   servertest(server(), url, {encoding: 'json'}, function (err, res) {
@@ -94,3 +93,4 @@ tape('should get echo', function (t) {
     t.end()
   })
 })
+
